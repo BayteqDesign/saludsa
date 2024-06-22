@@ -3,59 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saludsa - Home</title>
+    <title>Saludsa - Nuevas Funcionalidades</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("imgs/Home.png");
+            background-position: top center;
+            background-size: contain;
+        }
+        .container {
+            width: 375px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+            position: relative;
         }
         .header {
             background-color: #66cc99;
-            padding: 20px;
-            text-align: center;
+            border-radius: 10px 10px 0 0;
+            padding: 10px;
+            color: white;
+            font-size: 24px;
         }
-        .content {
+        .message {
             padding: 20px;
+            font-size: 18px;
+            color: #333;
         }
-        .card {
-            background-color: #f9f9f9;
-            padding: 15px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
+        .message p {
+            margin: 10px 0;
         }
         .button {
-            display: block;
+            display: inline-block;
             background-color: #66cc99;
             color: white;
             text-align: center;
             padding: 10px;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: 20px;
         }
         .button:hover {
             background-color: #55aa88;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .close-button:focus {
+            outline: none;
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>Bienvenida Eliana Carolina</h1>
-</div>
-
-<div class="content">
-    <div class="card">
-        <h2>¡Nuevas funcionalidades!</h2>
-        <p>Genera ODA, agenda tus citas y consulta sobre tus proveedores médicos de manera más directa.</p>
-        <a href="search.html" class="button">Iniciar búsqueda</a>
+<div class="container">
+    <button class="close-button"><a href="search.html">&times;</a></button>
+    <div class="header">
+        ¡Nuevas funcionalidades!
     </div>
-    <div class="card">
-        <h3>Favoritos</h3>
-        <ul>
-            <li>Evalúa tus síntomas</li>
-            <li>Chatea con un médico general</li>
-        </ul>
+    <div class="message">
+        <p>Seguimos mejorando la capacidad de nuestro buscador.</p>
+        <p>Ahora puedes generar ODAs, agendar tus citas además de consultar sobre tus proveedores médicos a través de nuestro buscador inteligente.</p>
     </div>
+    <a href="guiamedica.html" class="button">Iniciar búsqueda</a>
 </div>
 
 </body>
