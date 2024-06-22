@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludsa - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #66cc99;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .welcome {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+        .announcement {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px;
+        }
+        .announcement p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .announcement .icon {
+            font-size: 24px;
+        }
+        .favorites, .plans {
+            margin: 20px;
+        }
+        .favorites h2, .plans h2 {
+            font-size: 20px;
+            color: #333;
+        }
+        .favorites .item, .plans .item {
+            display: inline-block;
+            width: 45%;
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px 2.5%;
+            font-size: 16px;
+            color: #666;
+        }
+        .favorites .item img, .plans .item img {
+            width: 50px;
+            height: 50px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #666;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .navbar a:hover {
+            color: #333;
+        }
+        .navbar .icon {
+            font-size: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="card.png" alt="Saludsa Card">
+</div>
+
+<div class="card">
+    <div class="welcome">
+        Bienvenida Eliana Carolina
+    </div>
+    <div class="announcement">
+      <a href="guiamedica.html">
+        <p>Genera ODA, agenda tus citas y consulta sobre tus proveedores médicos de manera más directa.</p>
+        <div class="icon">🔍</div>
+      </a>
+    </div>
+</div>
+
+<div class="favorites">
+    <h2>Favoritos</h2>
+    <div>
+      <div class="item">
+        <img src="icon1.png" alt="Icono de síntomas">
+        <p>Evalúa tus síntomas</p>
+      </div>
+      <div class="item" >
+        <img src="icon2.png" alt="Icono de chat">
+        <p>Chatea con un médico general</p>
+      </div>
+    </div>
+</div>
+
+<div class="plans">
+    <h2>Planes y beneficios</h2>
+</div>
+
+<div class="navbar">
+    <a href="#"><div class="icon">🏠</div><div>Home</div></a>
+    <a href="#"><div class="icon">💼</div><div>Asesoría</div></a>
+    <a href="#"><div class="icon">🛠️</div><div>Servicios</div></a>
+    <a href="#"><div class="icon">👤</div><div>Mi Plan</div></a>
+</div>
+
+</body>
+</html>
